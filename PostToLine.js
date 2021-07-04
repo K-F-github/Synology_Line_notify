@@ -2,10 +2,9 @@ import { serve } from "https://deno.land/std@0.100.0/http/server.ts";
 const server = serve({ port: 3000 });
 for await (const request of server) {
 	if(request.headers.get("Authorization")){
-		Deno.resolveDns("notify-api.line.me","A",{nameServer:{ ipAddr: "8.8.8.8", port: 53 }}).then(()=>{
+		Deno.resolveDns("notify-api.line.me","A",{nameServer:{ ipAddr: "8.8.8.8", port: 53 }}).then(async ()=>{
 			for(var i = 0; i<3;i++){
-				let res = await send(request)
-				if(res === "200"){
+				if(await send(request) === "200"){
 					break;
 				} else {
 					console.log("resend")
