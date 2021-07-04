@@ -13,4 +13,4 @@ USER deno
 COPY PostToLine.js .
 RUN deno cache PostToLine.js
 
-CMD ["run", "--allow-net", "PostToLine.js"]
+CMD ["run", "--allow-net", "--unstable","PostToLine.js"]
