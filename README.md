@@ -6,27 +6,27 @@
 
 ### 1.Install DSM
 
---開啟DSM docker套件/open DSM docker
+開啟DSM docker套件/open DSM docker
 
-搜尋/search kitten1156
+- 搜尋/search kitten1156
 
-下載/download  synlogy_line_notify
-<img src=docs/set-docker1.png height="500px">
+- 下載/download  synlogy_line_notify
+<img src="https://github.com/kitten1156/Synology_Line_notify/blob/main/docs/set-docker1.png?raw=true" height="500px">
 
-下載完成後/download finish
+- 下載完成後/download finish
 
---新增容器/create continer
+新增容器/create continer
 
- CPU 低/low  RAM 128MB 
+ - CPU 低/low  RAM 128MB 
  
-<img src=docs/set-docker2.png height="500px">
+<img src="https://github.com/kitten1156/Synology_Line_notify/blob/main/docs/set-docker2.png?raw=true"  height="500px">
 
---進階設定/Advanced settings
+進階設定/Advanced settings
 
-啟用自動重啟/auto restart
+- 啟用自動重啟/auto restart
 
-<img src=docs/set-docker3.png height="300px">
+<img src="https://github.com/kitten1156/Synology_Line_notify/blob/main/docs/set-docker3.png?raw=true"  height="300px">
 
-port設定/port forwaring
+- port設定/port forwaring
 
-<img src=docs/set-docker4.png height="300px">
+<img src="https://github.com/kitten1156/Synology_Line_notify/blob/main/docs/set-docker4.png?raw=true"  height="300px">
