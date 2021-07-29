@@ -4,10 +4,15 @@ for await (const request of server) {
 	if(request.headers.get("Authorization")){
 		Deno.resolveDns("notify-api.line.me","A",{nameServer:{ ipAddr: "8.8.8.8", port: 53 }}).then(async ()=>{
 			for(var i = 0; i<3;i++){
-				if(await send(request) === "200"){
-					break;
-				} else {
-					console.log("resend")
+				try{
+					if(await send(request) === "200"){
+						break;
+					} else {
+						console.log("resend")
+					}
+				} catch(ex){
+					console.log(ex)
+					continue
 				}
 			}
 		})
