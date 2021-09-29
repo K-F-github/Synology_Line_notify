@@ -15,7 +15,7 @@
 
 - 下載完成後/download finish
 
-新增容器/create continer
+部屬容器/Deployment continer
 
  - CPU 低/low  RAM 128MB 
  
