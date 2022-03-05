@@ -8,7 +8,7 @@
 
 開啟DSM docker套件/open DSM docker
 
-- 搜尋/search K-F-github
+- 搜尋/search kfgithub
 
 - 下載/download  synlogy_line_notify
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/set-docker1.png?raw=true" height="500px">
