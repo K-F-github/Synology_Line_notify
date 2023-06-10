@@ -1,4 +1,4 @@
-FROM denoland/deno:1.19.2
+FROM denoland/deno:1.34.2
 
 # The port that your application listens to.
 EXPOSE 3000
@@ -13,4 +13,4 @@ USER deno
 COPY PostToLine.js .
 RUN deno cache PostToLine.js
 
-CMD ["run", "--allow-net", "--unstable","PostToLine.js"]
+CMD ["run", "--allow-net","PostToLine.js"]

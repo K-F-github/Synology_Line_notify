@@ -1,6 +1,6 @@
 # Synology_Line_notify
 
-### DSM 7.0 Webhook to Line Notify
+### DSM 7.2 Webhook to Line Notify
 
 ### Getting Started
 
@@ -18,14 +18,8 @@
 部屬容器/Deployment continer
 
  - CPU 低/low  RAM 128MB 
- 
+ - 啟用自動重啟/auto restart
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/set-docker2.png?raw=true"  height="500px">
-
-進階設定/Advanced settings
-
-- 啟用自動重啟/auto restart
-
-<img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/set-docker3.png?raw=true"  height="300px">
 
 - port設定/port forwaring
 
@@ -58,28 +52,24 @@
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/dsm-notify-1.png?raw=true"  height="500px">
 
 - 選自定 / click custom
-
+- 規則:All / Rule click All
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/dsm-notify-2.png?raw=true"  height="500px">
 
 - 填寫一個名稱/ write a name
-- Webhook網址填入 http://127.0.0.1:[docker設定的port]/?message=Hello+world
-- Webhook url : http://127.0.0.1:[docker port]/?message=Hello+world
+- Webhook網址填入 http://127.0.0.1:[docker設定的port]/
+- Webhook url : http://127.0.0.1:[docker port]/
 
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/dsm-notify-3.png?raw=true"  height="500px">
 
-- 新增/add header
+- 新增HTTP標頭/add http header
 - 參數/option：Authorization
 - 值/value：Bearer [line token]
 - PS.值Bearer與token中間有個空格
 - PS.Bearer and token have a space in middle
-
+- 新增參數
+- 參數/option:message
+- 值/value:@@TEXT@@
 <img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/dsm-notify-4.png?raw=true"  height="500px">
-
--設定message 為 通知內文 / Set message type FULLTEXT
-
--設定Authorization 為 其他參數 / Set Authorization type OTHER
-
-<img src="https://github.com/K-F-github/Synology_Line_notify/blob/main/docs/dsm-notify-5.png?raw=true"  height="500px">
 
 -完成後可以點擊發送測試通知  /  send test Notifications after finish setting
 
