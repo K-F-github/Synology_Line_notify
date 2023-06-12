@@ -27,7 +27,7 @@ for await (const conn of Deno.listen({ port: 3000 })) {
 	handleHttp(conn);
 }
 async function send(request){
-	const url = new URLPattern(request.url);
+	const url = new URL(request.url);
 	const param = new URLSearchParams(url.search);
 	return await fetch(`https://notify-api.line.me/api/notify`, {
 		headers: {
