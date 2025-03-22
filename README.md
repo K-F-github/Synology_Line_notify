@@ -1,5 +1,7 @@
 # Synology_Line_notify
 
+## 由於Line notify將結束服務，所以此項目也停止
+# #Due to Line Notify ending its service, this project will also be discontinued.
 ### DSM 7.2 Webhook to Line Notify
 
 ### Getting Started
